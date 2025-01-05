@@ -1,6 +1,3 @@
-autoload -Uz compinit
-compinit
-
 export VIRTUAL_ENV_DISABLE_PROMPT=0
 export PIPENV_VENV_IN_PROJECT=1
 

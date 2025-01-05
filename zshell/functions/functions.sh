@@ -10,5 +10,9 @@ _bezos() {
 }
 
 autoload -U bezos rattler
+
+autoload -Uz compinit
+compinit
+
 compdef _rattler rattler 
 compdef _bezos bezos
