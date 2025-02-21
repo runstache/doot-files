@@ -4,6 +4,7 @@ $shell_tools = "$ENV:GIT_HUB_HOME/shell-tools"
 if (Test-Path -Path $shell_tools -PathType Container) {
   . $shell_tools\powershell\aws_connect.ps1
   . $shell_tools\powershell\rattler.ps1
+  . $shell_tools\powershell\mamba.ps1
 
 }
 
