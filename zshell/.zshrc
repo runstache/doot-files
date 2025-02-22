@@ -16,3 +16,9 @@ fi
 if [[ ! -z "${GIT_HUB_HOME}" ]]; then;
     source "$GIT_HUB_HOME/doot-files/zshell/add-ons/add-ons.sh"
 fi
+
+# Check is SSH Agent is running
+if [[ -z "$SSH_AUTH_SOCK" &&  -z "${SSH_KEY}" ]] ; then
+    eval `ssh-agent -s`
+    ssh-add $SSH_KEY
+fi
