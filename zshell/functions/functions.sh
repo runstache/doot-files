@@ -2,7 +2,7 @@ uv_command=$(( $+commands[uv] ))
 aws_command=$(( $+commands[aws] ))
 
 if [[ $uv_command == 0 ]] ; then;
-    echo 'UV is not present, Rattler may not be fully functional'
+    echo 'UV is not present, Mamba may not be fully functional'
 fi
 
 if [[ $aws_command == 0 ]]; then;
@@ -12,23 +12,8 @@ fi
 
 fpath=("$GIT_HUB_HOME/shell-tools/functions" $fpath)
 
-_mamba() {
-    compadd install sync rm activate sca coverage cdk
-}
 
-_rattler() {
-    compadd install sync rm activate sca coverage cdk
-}
-
-
-_bezos() {
-    compadd connect creds bastion list
-}
-
-autoload -U bezos rattler
+autoload -U bezos mamba rattler
 
 autoload -Uz compinit
 compinit
-
-compdef _rattler rattler 
-compdef _bezos bezos
