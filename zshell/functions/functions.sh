@@ -12,8 +12,12 @@ fi
 
 fpath=("$GIT_HUB_HOME/shell-tools/functions" $fpath)
 
+_mamba() {
+    compadd install sync rm activate sca coverage cdk
+}
+
 _rattler() {
-    compadd install sync rm activate sca coverage
+    compadd install sync rm activate sca coverage cdk
 }
 
 
