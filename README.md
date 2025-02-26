@@ -22,3 +22,13 @@ export GIT_HUB_HOME="Path to where you have cloned your github repos"
 source "$GIT_HUB_HOME/doot-files/zshell/.zshrc"
 
 ```
+
+### Powershell
+
+Add the following to __Microsoft.Prowershell_profile.ps1__
+
+```powershell
+
+. "$ENV:GIT_HUB_HOME\doot-files\powershell\Microsoft.Powershell_profile.ps1"
+
+```
