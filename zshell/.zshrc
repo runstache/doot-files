@@ -22,3 +22,7 @@ if [[ -z "$SSH_AUTH_SOCK" &&  -z "${SSH_KEY}" ]] ; then
     eval `ssh-agent -s`
     ssh-add $SSH_KEY
 fi
+
+# Aliases
+
+alias cls="clear"
