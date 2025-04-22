@@ -60,13 +60,13 @@ esac
 # Git related
 : ${AGNOSTER_GIT_CLEAN_FG:=${CURRENT_FG}}
 : ${AGNOSTER_GIT_CLEAN_BG:=green}
-: ${AGNOSTER_GIT_DIRTY_FG:=black}
+: ${AGNOSTER_GIT_DIRTY_FG:=${CURRENT_FG}}
 : ${AGNOSTER_GIT_DIRTY_BG:=yellow}
 
 # Bazaar related
 : ${AGNOSTER_BZR_CLEAN_FG:=${CURRENT_FG}}
 : ${AGNOSTER_BZR_CLEAN_BG:=green}
-: ${AGNOSTER_BZR_DIRTY_FG:=black}
+: ${AGNOSTER_BZR_DIRTY_FG:=${CURRENT_FG}}
 : ${AGNOSTER_BZR_DIRTY_BG:=yellow}
 
 # Mercurial related
@@ -84,7 +84,7 @@ esac
 # AWS Profile colors
 : ${AGNOSTER_AWS_PROD_FG:=yellow}
 : ${AGNOSTER_AWS_PROD_BG:=red}
-: ${AGNOSTER_AWS_FG:=black}
+: ${AGNOSTER_AWS_FG:=${CURRENT_FG}}
 : ${AGNOSTER_AWS_BG:=green}
 
 # Status symbols

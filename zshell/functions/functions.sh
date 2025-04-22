@@ -17,3 +17,10 @@ autoload -U bezos mamba rattler
 
 autoload -Uz compinit
 compinit
+
+
+rb(){
+    local lb=$(git rev-parse --abbrev-ref HEAD)
+    local commit=$(git merge-base "$lb" "$1")
+    git reset --soft $commit
+}
