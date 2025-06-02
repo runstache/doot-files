@@ -26,3 +26,5 @@ fi
 # Aliases
 
 alias cls="clear"
+alias pshell="pwsh"
+alias powershell="pwsh"
