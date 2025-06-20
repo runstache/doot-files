@@ -28,3 +28,4 @@ fi
 alias cls="clear"
 alias pshell="pwsh"
 alias powershell="pwsh"
+alias tf="terraform"
