@@ -1,6 +1,6 @@
 export VIRTUAL_ENV_DISABLE_PROMPT=0
 export PIPENV_VENV_IN_PROJECT=1
-export UV_EXCLUDE_NEWER="2 day"
+#export UV_EXCLUDE_NEWER="2 day"
 export UV_VENV_SEED=true
 
 # Check for UV installation
